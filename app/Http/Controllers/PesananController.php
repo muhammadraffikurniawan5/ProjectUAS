@@ -83,6 +83,8 @@ class PesananController extends Controller
         $pesanan->produk_id = $request->produk_id;
         $pesanan->save();
 
+        $produk = Produk::find($request->produk_id);
+
         return redirect('manage/pesanan');
     }
 

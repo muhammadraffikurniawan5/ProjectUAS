@@ -55,8 +55,8 @@
             <div class="form-group row">
                 <label for="deskripsi" class="col-4 col-form-label">Deskripsi</label>
                 <div class="col-8">
-                    <input id="deskripsi" name="deskripsi" value="{{ $prod->deskripsi }}" type="text"
-                        class="form-control" spellcheck="false" data-ms-editor="true">
+                    <textarea id="deskripsi" name="deskripsi" cols="40" rows="5" class="form-control" spellcheck="false"
+                        data-ms-editor="true">{{ $prod->deskripsi }}</textarea>
                 </div>
             </div>
             <div class="form-group row mt-2">
@@ -64,9 +64,11 @@
                 <div class="col-8">
                     <select id="kategori_produk_id" name="kategori_produk_id" class="form-select">
                         @foreach ($kategori_produk as $value)
-                            <option value="{{ $value->id }}">{{ $value->nama }}</option>
+                            <option value="{{ $value->id }}" @if ($value->id == $prod->kategori_produk_id) selected @endif>
+                                {{ $value->nama }}</option>
                         @endforeach
                     </select>
+
                 </div>
             </div>
             <div class="form-group row mt-2">

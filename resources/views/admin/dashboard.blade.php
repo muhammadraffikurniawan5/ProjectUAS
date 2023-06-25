@@ -150,7 +150,7 @@
                         <div class="card-header">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <h2 class="fs-5 fw-bold mb-0">Page visits</h2>
+                                    <h2 class="fs-5 fw-bold mb-0">Sales traffic by category</h2>
                                 </div>
                                 <div class="col text-end">
                                     <a href="#" class="btn btn-sm btn-primary">See all</a>
@@ -161,26 +161,26 @@
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
                                     <tr>
-                                        <th class="border-bottom" scope="col">Page name</th>
-                                        <th class="border-bottom" scope="col">Page Views</th>
-                                        <th class="border-bottom" scope="col">Page Value</th>
-                                        <th class="border-bottom" scope="col">Bounce rate</th>
+                                        <th class="border-bottom" scope="col">Category Produk</th>
+                                        <th class="border-bottom" scope="col">Total Sales</th>
+                                        <th class="border-bottom" scope="col">Total Income</th>
+                                        <th class="border-bottom" scope="col">Bounce Rate</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th class="text-gray-900" scope="row">
-                                            /demo/admin/index.html
+                                            Lenovo
                                         </th>
                                         <td class="fw-bolder text-gray-500">
                                             3,225
                                         </td>
                                         <td class="fw-bolder text-gray-500">
-                                            $20
+                                            $200
                                         </td>
                                         <td class="fw-bolder text-gray-500">
                                             <div class="d-flex">
-                                                <svg class="icon icon-xs text-danger me-2" fill="currentColor"
+                                                <svg class="icon icon-xs text-success me-2" fill="currentColor"
                                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd"
                                                         d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
@@ -192,17 +192,17 @@
                                     </tr>
                                     <tr>
                                         <th class="text-gray-900" scope="row">
-                                            /demo/admin/forms.html
+                                            Dell
                                         </th>
                                         <td class="fw-bolder text-gray-500">
                                             2,987
                                         </td>
                                         <td class="fw-bolder text-gray-500">
-                                            0
+                                            $80
                                         </td>
                                         <td class="fw-bolder text-gray-500">
                                             <div class="d-flex">
-                                                <svg class="icon icon-xs text-success me-2" fill="currentColor"
+                                                <svg class="icon icon-xs text-danger me-2" fill="currentColor"
                                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd"
                                                         d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
@@ -214,39 +214,39 @@
                                     </tr>
                                     <tr>
                                         <th class="text-gray-900" scope="row">
-                                            /demo/admin/util.html
+                                            Thinkpad
                                         </th>
                                         <td class="fw-bolder text-gray-500">
                                             2,844
                                         </td>
                                         <td class="fw-bolder text-gray-500">
-                                            294
+                                            $1250
                                         </td>
                                         <td class="fw-bolder text-gray-500">
                                             <div class="d-flex">
                                                 <svg class="icon icon-xs text-success me-2" fill="currentColor"
                                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd"
-                                                        d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+                                                        d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
                                                         clip-rule="evenodd"></path>
                                                 </svg>
-                                                32,35%
+                                                60,55%
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th class="text-gray-900" scope="row">
-                                            /demo/admin/validation.html
+                                            Asus
                                         </th>
                                         <td class="fw-bolder text-gray-500">
                                             2,050
                                         </td>
                                         <td class="fw-bolder text-gray-500">
-                                            $147
+                                            $850
                                         </td>
                                         <td class="fw-bolder text-gray-500">
                                             <div class="d-flex">
-                                                <svg class="icon icon-xs text-danger me-2" fill="currentColor"
+                                                <svg class="icon icon-xs text-success me-2" fill="currentColor"
                                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd"
                                                         d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
@@ -258,17 +258,17 @@
                                     </tr>
                                     <tr>
                                         <th class="text-gray-900" scope="row">
-                                            /demo/admin/modals.html
+                                            Acer
                                         </th>
                                         <td class="fw-bolder text-gray-500">
                                             1,483
                                         </td>
                                         <td class="fw-bolder text-gray-500">
-                                            $19
+                                            $245
                                         </td>
                                         <td class="fw-bolder text-gray-500">
                                             <div class="d-flex">
-                                                <svg class="icon icon-xs text-success me-2" fill="currentColor"
+                                                <svg class="icon icon-xs text-danger me-2" fill="currentColor"
                                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd"
                                                         d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
@@ -361,104 +361,36 @@
                 </div>
                 <div class="col-12 col-xxl-6 mb-4">
                     <div class="card border-0 shadow">
-                        <div class="card-header border-bottom d-flex align-items-center justify-content-between">
-                            <h2 class="fs-5 fw-bold mb-0">Progress track</h2>
-                            <a href="#" class="btn btn-sm btn-primary">See tasks</a>
-                        </div>
                         <div class="card-body">
-                            <!-- Project 1 -->
-                            <div class="row mb-4">
-                                <div class="col-auto">
-                                    <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                        <path fill-rule="evenodd"
-                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div class="col">
-                                    <div class="progress-wrapper">
-                                        <div class="progress-info">
-                                            <div class="h6 mb-0">Rocket - SaaS Template</div>
-                                            <div class="small fw-bold text-gray-500"><span>75 %</span></div>
-                                        </div>
-                                        <div class="progress mb-0">
-                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-                                        </div>
+                            <h2 class="fs-5 fw-bold mb-1">Acquisition</h2>
+                            <p>Tells you where your visitors originated from, such as search engines, social networks or
+                                website
+                                referrals.</p>
+                            <div class="d-block">
+                                <div class="d-flex align-items-center me-5">
+                                    <div class="icon-shape icon-sm icon-shape-danger rounded me-3">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="d-block">
+                                        <label class="mb-0">Bounce Rate</label>
+                                        <h4 class="mb-0">33.50%</h4>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Project 2 -->
-                            <div class="row align-items-center mb-4">
-                                <div class="col-auto">
-                                    <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                        <path fill-rule="evenodd"
-                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div class="col">
-                                    <div class="progress-wrapper">
-                                        <div class="progress-info">
-                                            <div class="h6 mb-0">Themesberg - Design System</div>
-                                            <div class="small fw-bold text-gray-500"><span>60 %</span></div>
-                                        </div>
-                                        <div class="progress mb-0">
-                                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                                        </div>
+                                <div class="d-flex align-items-center pt-3">
+                                    <div class="icon-shape icon-sm icon-shape-purple rounded me-3">
+                                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z">
+                                            </path>
+                                        </svg>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- Project 3 -->
-                            <div class="row align-items-center mb-4">
-                                <div class="col-auto">
-                                    <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                        <path fill-rule="evenodd"
-                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div class="col">
-                                    <div class="progress-wrapper">
-                                        <div class="progress-info">
-                                            <div class="h6 mb-0">Homepage Design in Figma</div>
-                                            <div class="small fw-bold text-gray-500"><span>45 %</span></div>
-                                        </div>
-                                        <div class="progress mb-0">
-                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="45"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project 4 -->
-                            <div class="row align-items-center mb-3">
-                                <div class="col-auto">
-                                    <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                        <path fill-rule="evenodd"
-                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div class="col">
-                                    <div class="progress-wrapper">
-                                        <div class="progress-info">
-                                            <div class="h6 mb-0">Backend for Themesberg v2</div>
-                                            <div class="small fw-bold text-gray-500"><span>34 %</span></div>
-                                        </div>
-                                        <div class="progress mb-0">
-                                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="34"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 34%;"></div>
-                                        </div>
+                                    <div class="d-block">
+                                        <label class="mb-0">Sessions</label>
+                                        <h4 class="mb-0">9,567</h4>
                                     </div>
                                 </div>
                             </div>
@@ -592,76 +524,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 px-0">
-                <div class="card border-0 shadow">
-                    <div class="card-body">
-                        <h2 class="fs-5 fw-bold mb-1">Acquisition</h2>
-                        <p>Tells you where your visitors originated from, such as search engines, social networks or website
-                            referrals.</p>
-                        <div class="d-block">
-                            <div class="d-flex align-items-center me-5">
-                                <div class="icon-shape icon-sm icon-shape-danger rounded me-3">
-                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div class="d-block">
-                                    <label class="mb-0">Bounce Rate</label>
-                                    <h4 class="mb-0">33.50%</h4>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-3">
-                                <div class="icon-shape icon-sm icon-shape-purple rounded me-3">
-                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="d-block">
-                                    <label class="mb-0">Sessions</label>
-                                    <h4 class="mb-0">9,567</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="theme-settings card bg-gray-800 pt-2 collapse" id="theme-settings">
-        <div class="card-body bg-gray-800 text-white pt-4">
-            <button type="button" class="btn-close theme-settings-close" aria-label="Close" data-bs-toggle="collapse"
-                href="#theme-settings" role="button" aria-expanded="false" aria-controls="theme-settings"></button>
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <p class="m-0 mb-1 me-4 fs-7">Open source <span role="img" aria-label="gratitude">💛</span></p>
-                <a class="github-button" href="https://github.com/themesberg/volt-bootstrap-5-dashboard"
-                    data-color-scheme="no-preference: dark; light: light; dark: light;" data-icon="octicon-star"
-                    data-size="large" data-show-count="true"
-                    aria-label="Star themesberg/volt-bootstrap-5-dashboard on GitHub">Star</a>
-            </div>
-            <a href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard" target="_blank"
-                class="btn btn-secondary d-inline-flex align-items-center justify-content-center mb-3 w-100">
-                Download
-                <svg class="icon icon-xs ms-2" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </a>
-            <p class="fs-7 text-gray-300 text-center">Available in the following technologies:</p>
-            <div class="d-flex justify-content-center">
-                <a class="me-3" href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard"
-                    target="_blank">
-                    <img src="../../assets/img/technologies/bootstrap-5-logo.svg" class="image image-xs">
-                </a>
-                <a href="https://demo.themesberg.com/volt-react-dashboard/#/" target="_blank">
-                    <img src="../../assets/img/technologies/react-logo.svg" class="image image-xs">
-                </a>
             </div>
         </div>
     </div>

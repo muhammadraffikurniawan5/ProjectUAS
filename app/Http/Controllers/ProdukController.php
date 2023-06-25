@@ -80,6 +80,9 @@ class ProdukController extends Controller
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori_produk_id = $request->kategori_produk_id;
         $produk->save();
+
+        $kategori_produk = KategoriProduk::find($request->kategori_produk_id);
+
         return redirect('manage/produk');
     }
 
