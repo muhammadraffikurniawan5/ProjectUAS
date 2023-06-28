@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome.welcome');
 });
 
 Route::group(['middleware' => ['auth', 'peran:admin-manager']], function () {
