@@ -7,9 +7,11 @@
         <meta name="author" content="" />
         <title>Project UAS</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="(public/welcome/assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('admin/assets/img/brand/galaxy.svg') }}" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href={{ asset('welcome/css/styles.css') }} rel="stylesheet" />
+
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <!-- Neon Effect -->
         <style>
         .neon-text {
@@ -21,13 +23,13 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="#!">Gadget Galaxy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
                         @if (Route::has('login'))
                 <ul class="navbar-nav">
@@ -35,7 +37,7 @@
                     <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Home</a></li>
                     @else
                     <li class="nav-item"><a href="{{ route('login') }}" class="nav-link font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Log in</a></li>
-        
+
                     @if (Route::has('register'))
                     <li class="nav-item"><a href="{{ route('register') }}" class="nav-link font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Register</a></li>
                     @endif
@@ -47,9 +49,8 @@
             </div>
         </nav>
         <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1610465299993-e6675c9f9efa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80/wfh8dDlNFOk/1600x900')">
+        <header class="mt-5 py-5 bg-image-full" style="background-image: url('https://images.unsplash.com/photo-1610465299993-e6675c9f9efa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&w=1000&q=80/wfh8dDlNFOk/1600x900')">
             <div class="text-center my-5">
-                <img class="img-fluid rounded-circle mb-4" src="/150x150/6c757d/dee2e6.jpg" alt="..." />
                 <h1 class="text-white fs-3 fw-bolder">Welcome</h1>
                 <p class="text-white-50 mb-0">to Gadget Galaxy</p>
             </div>
