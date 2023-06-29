@@ -8,7 +8,7 @@
     </div>
 
     @foreach ($produk as $prod)
-        <form action="{{ url('manage/produk/update/' . $prod->id) }}" method="POST">
+        <form action="{{ url('manage/produk/update/' . $prod->id) }}" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group row">
                 <label for="kode" class="col-4 col-form-label">Kode</label>
@@ -57,6 +57,12 @@
                 <div class="col-8">
                     <textarea id="deskripsi" name="deskripsi" cols="40" rows="5" class="form-control" spellcheck="false"
                         data-ms-editor="true">{{ $prod->deskripsi }}</textarea>
+                </div>
+            </div>
+            <div class="form-group row mt-3">
+                <label for="formFile" class="col-4 col-form-label">Foto Produk</label>
+                <div class="col-8">
+                    <input class="form-control" name="foto" type="file" id="formFile">
                 </div>
             </div>
             <div class="form-group row mt-2">

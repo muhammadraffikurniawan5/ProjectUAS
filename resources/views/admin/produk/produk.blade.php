@@ -56,6 +56,7 @@
                                 <th class="border-0">Stok</th>
                                 <th class="border-0">Minimal Stok</th>
                                 <th class="border-0">Deskripsi</th>
+                                <th class="border-0">Foto</th>
                                 <th class="border-0">Kategori Produk</th>
                                 <th class="border-0 rounded-end">Action</th>
                             </tr>
@@ -77,6 +78,9 @@
                                     <td>{{ $p->min_stok }}</td>
                                     <td style="max-width: 500px; overflow: hidden; text-overflow: ellipsis;">
                                         {{ $p->deskripsi }}
+                                    </td>
+                                    <td>
+                                        <img src="{{ asset('storage/images/products/' . $p->foto) }}" alt="Foto Produk" style="max-width: 50px;">
                                     </td>
                                     <td>{{ $p->nama_kategori }}</td>
                                     <td>

@@ -39,6 +39,13 @@ class ProdukController extends Controller
         $produk->min_stok = $request->min_stok;
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori_produk_id = $request->kategori_produk_id;
+
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $path = $file->store('public/images/products');
+            $produk->foto = $file->hashName();
+        }
+
         $produk->save();
 
         return redirect('manage/produk');
@@ -79,6 +86,13 @@ class ProdukController extends Controller
         $produk->min_stok = $request->min_stok;
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori_produk_id = $request->kategori_produk_id;
+
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $path = $file->store('public/images/products');
+            $produk->foto = $file->hashName();
+        }
+
         $produk->save();
 
         $kategori_produk = KategoriProduk::find($request->kategori_produk_id);

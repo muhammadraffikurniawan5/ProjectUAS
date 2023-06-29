@@ -17,12 +17,16 @@
         rel="stylesheet" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ asset('user/css/styles.css') }}" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column h-100">
-<h3>Ini halaman dashboard penjualn user</h3>
+    <h3>Ini halaman dashboard penjualn user</h3>
 
     <main class="flex-shrink-0">
         <!-- Navigation-->
@@ -52,6 +56,45 @@
             </div>
         </nav>
     </main>
+
+    <section class="content py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- Tampil Produk -->
+                <?php
+
+            foreach ($produk as $value) {
+            ?>
+                <div class="mb-5">
+                    <div class="card h-100 shadow-sm p-2 bg-body rounded">
+                        <!-- Product image-->
+                        <div class="img-product">
+                            <img class="card-img-top" src="{{ asset('storage/images/products/' . $value->foto) }}"
+                                alt="Foto Produk" />
+                        </div>
+                        <!-- Product details-->
+                        <div class="card-body ">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">{{ $value->nama }}</h5>
+
+                                <!-- Product code -->
+                                <p class="fw-bolder">{{ $value->kode }}</p>
+
+                                <!-- Product price-->
+                                Rp {{ $value->harga_jual }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
+
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

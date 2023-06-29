@@ -22,6 +22,7 @@ class Produk extends Model
         'stok',
         'min_stok',
         'deskripsi',
+        'foto',
         'kategori_produk_id',
     ];
     public function kategori_produk()
