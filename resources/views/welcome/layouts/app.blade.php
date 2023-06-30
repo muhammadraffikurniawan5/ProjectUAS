@@ -34,7 +34,7 @@
                         @if (Route::has('login'))
                 <ul class="navbar-nav">
                     @auth
-                    <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Home</a></li>
+                    <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Dashboard</a></li>
                     @else
                     <li class="nav-item"><a href="{{ route('login') }}" class="nav-link font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Log in</a></li>
 

@@ -151,13 +151,13 @@
                         <div class="multi-level collapse " role="list" id="profile" aria-expanded="false">
                             <ul class="flex-column nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#!">
+                                    <a class="nav-link" href="#myprofile">
                                         <span class="sidebar-text">My Profile</span>
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#!">
+                                    <a class="nav-link" href="#support">
                                         <span class="sidebar-text">Support</span>
                                     </a>
                                 </li>
@@ -194,7 +194,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#"
+                        <a href="https://api.whatsapp.com/" target="__blank"
                             class="btn btn-secondary d-flex align-items-center justify-content-center btn-upgrade-pro">
                             <span class="sidebar-icon d-inline-flex align-items-center justify-content-center">
                                 <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
