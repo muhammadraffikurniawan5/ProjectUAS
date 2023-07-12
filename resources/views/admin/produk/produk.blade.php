@@ -85,8 +85,10 @@
                                     <td>{{ $p->nama_kategori }}</td>
                                     <td>
                                         <div class="d-flex">
+                                            <a href="{{ url('manage/produk/detail/' . $p->id) }}"
+                                                class="btn btn-primary">Detail</a>
                                             <a href="{{ url('manage/produk/edit/' . $p->id) }}"
-                                                class="btn btn-success">Edit</a>
+                                                class="btn btn-success ms-2">Edit</a>
                                             @if (Auth::user()->role == 'admin')
                                                 <a href="{{ url('manage/produk/delete/' . $p->id) }}"
                                                     class="btn btn-danger ms-2">Delete</a>

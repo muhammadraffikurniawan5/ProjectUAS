@@ -57,7 +57,7 @@ class ProdukController extends Controller
     public function show(string $id)
     {
         $produk = Produk::find($id);
-        $kategori_produk = KategoriProduk::find($id);
+        $kategori_produk = KategoriProduk::find($produk->kategori_produk_id);
 
         return view('admin.produk.detailProduk', compact('produk', 'kategori_produk'));
     }

@@ -8,16 +8,13 @@
             <!-- List -->
             <ul class="list-inline list-group-flush list-group-borderless text-md-end mb-0">
                 <li class="list-inline-item px-0 px-sm-2">
-                    <a href="https://themesberg.com/about">About</a>
+                    <a href="#/aboutGadgetGalaxy">About</a>
                 </li>
                 <li class="list-inline-item px-0 px-sm-2">
-                    <a href="https://themesberg.com/themes">Themes</a>
+                    <a href="#/blogTech">Blog</a>
                 </li>
                 <li class="list-inline-item px-0 px-sm-2">
-                    <a href="https://themesberg.com/blog">Blog</a>
-                </li>
-                <li class="list-inline-item px-0 px-sm-2">
-                    <a href="https://themesberg.com/contact">Contact</a>
+                    <a href="https://api.whatsapp.com/" target="__blank">Contact</a>
                 </li>
             </ul>
         </div>

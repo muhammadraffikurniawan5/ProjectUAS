@@ -28,7 +28,7 @@
 
 <body class="d-flex flex-column h-100">
     <div class="parallax">
-        <h3>Ini halaman dashboard penjualan user</h3>
+        <h3>Selamat Datang di Etalase GadgetGalaxy</h3>
     </div>
 
     <style>
@@ -82,7 +82,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-gray py-3">
             <div class="container px-5">
                 <a class="navbar-brand" href="{{ url('user/dashboard') }}">
-                    <span class="fw-bolder text-primary">My Profiles</span>
+                    <span class="fw-bolder text-primary">Gadget Galaxy</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -91,6 +91,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        @if (Auth::user()->role != 'pelanggan')
+                        <li class="nav-item">
+                            <a class="dropdown-item nav-link" href="{{ url('/') }}"> Dashboard</a>
+                        </li>
+                        @endif
+                        <li class="nav-item">
+                            <a class="dropdown-item nav-link" href="{{ url('/') }}"> Landing Page</a>
+                        </li>
                         <li class="nav-item">
                             <a class="dropdown-item nav-link" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
