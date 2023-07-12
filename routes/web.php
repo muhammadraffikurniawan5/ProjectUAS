@@ -52,6 +52,7 @@ Route::group(['middleware' => ['auth', 'peran:admin-manager']], function () {
 });
 
 Route::prefix('user')->group(function () {
+    Route::get('/dashboard/search', [DashboardUserController::class, 'search'])->name('user.dashboard.search');
     Route::get('/dashboard', [DashboardUserController::class, 'index'])->name('user.dashboard');
 });
 

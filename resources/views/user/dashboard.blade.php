@@ -109,6 +109,13 @@
 
     <section class="content py-5">
         <div class="container px-4 px-lg-5 mt-5">
+            <form class="mb-3" action="{{ route('user.dashboard.search') }}" method="GET">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="keyword" placeholder="Cari produk...">
+                    <button type="submit" class="btn btn-primary">Cari</button>
+                </div>
+            </form>
+
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <?php
             foreach ($produk as $value) {
