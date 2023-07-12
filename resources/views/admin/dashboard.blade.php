@@ -24,11 +24,8 @@
                         <div class="col-12 col-xl-7 px-xl-0">
                             <div class="d-none d-sm-block">
                                 <h2 class="h6 text-gray-400 mb-0">Customers</h2>
-                                @php
-                                    $jumlahProduk = App\Models\Produk::count();
-                                @endphp
 
-                                <h3 class="fw-extrabold mb-2">{{ $jumlahProduk }}</h3>
+                                <h3 class="fw-extrabold mb-2">768</h3>
 
                             </div>
                             <small class="d-flex align-items-center text-gray-500">
@@ -39,7 +36,7 @@
                                         d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                                USA
+                                INA
                             </small>
                             <div class="small d-flex mt-1">
                                 <div>Since last month <svg class="icon icon-xs text-success" fill="currentColor"
@@ -86,7 +83,7 @@
                                         d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                                GER
+                                USA
                             </small>
                             <div class="small d-flex mt-1">
                                 <div>Since last month <svg class="icon icon-xs text-danger" fill="currentColor"
@@ -405,7 +402,10 @@
                     <div class="card-header d-flex flex-row align-items-center flex-0 border-bottom">
                         <div class="d-block">
                             <div class="h6 fw-normal text-gray mb-2">Total orders</div>
-                            <h2 class="h3 fw-extrabold">452</h2>
+                            @php
+                                $jumlahPesanan = App\Models\Pesanan::count();
+                            @endphp
+                            <h2 class="h3 fw-extrabold">{{ $jumlahPesanan .'K' }}</h2>
                             <div class="small mt-2">
                                 <span class="fas fa-angle-up text-success"></span>
                                 <span class="text-success fw-bold">18.2%</span>
