@@ -23,30 +23,80 @@
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ asset('user/css/styles.css') }}" rel="stylesheet" />
+    <script src="{{ asset('user/js/script.js') }}"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
-    <h3>Ini halaman dashboard penjualn user</h3>
+    <div class="parallax">
+        <h3>Ini halaman dashboard penjualan user</h3>
+    </div>
+
+    <style>
+        .parallax {
+            background-image: url('{{ asset('images/laptop.jpg') }}');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 400px;
+        }
+
+        .parallax h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        body {
+            background-color: #A9A9A9;
+        }
+
+        .dropdown-item.nav-link {
+            color: white;
+        }
+
+        h3:hover {
+            color: blue;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var parallax = document.querySelector('.parallax');
+            var scrollPosition = window.pageYOffset;
+            parallax.style.transform = 'translateY(' + scrollPosition * 0.4 + 'px)';
+        });
+    </script>
 
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-gray py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="{{ url('user/dashboard') }}"><span class="fw-bolder text-primary">My
-                        Profiles</span></a>
+                <a class="navbar-brand" href="{{ url('user/dashboard') }}">
+                    <span class="fw-bolder text-primary">My Profiles</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                         <li class="nav-item">
                             <a class="dropdown-item nav-link" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
-
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
                             </form>
@@ -60,37 +110,36 @@
     <section class="content py-5">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <!-- Tampil Produk -->
                 <?php
-
             foreach ($produk as $value) {
             ?>
-                <div class="mb-5">
+                <div class="col mb-5">
                     <div class="card h-100 shadow-sm p-2 bg-body rounded">
                         <!-- Product image-->
-                        <div class="img-product">
-                            <img class="card-img-top" src="{{ asset('storage/images/products/' . $value->foto) }}"
+                        <div class="img-product text-center">
+                            <img class="card-img-top " src="{{ asset('storage/images/products/' . $value->foto) }}"
                                 alt="Foto Produk" />
                         </div>
-                        <!-- Product details-->
-                        <div class="card-body ">
+
+                        <div class="card-body">
                             <div class="text-center">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">{{ $value->nama }}</h5>
-
                                 <!-- Product code -->
                                 <p class="fw-bolder">{{ $value->kode }}</p>
-
                                 <!-- Product price-->
-                                Rp {{ $value->harga_jual }}
+                                <p>Rp {{ $value->harga_jual }}</p>
                             </div>
+                        </div>
+
+                        <div class="">
+                            <a href="#pesanan" class="btn btn-primary btn-block d-grid">Beli</a>
                         </div>
                     </div>
                 </div>
                 <?php
             }
             ?>
-
             </div>
         </div>
     </section>
